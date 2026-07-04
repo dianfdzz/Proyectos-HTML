@@ -1,0 +1,85 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(43, 74, 133);
+    text-align: center;
+}
+
+#parrafo {
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.bandera {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    width: 100px;
+    height: auto;
+}
+
+.miBoton {
+    display: block;
+    margin: 0 auto;
+}
+
+.carrusel-imagen {
+    width: 350px;
+    height: 230px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.card-playa {
+    width: 300px;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.card-playa:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.card-img-top{
+    height: 220px;
+    object-fit: cover;
+}
+
+.accordion{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.boton-alerta{
+    background-color: aliceblue;
+    display: block;
+    margin: 20px auto;
+}
+.boton-popover{
+    background-color: aliceblue;
+    display: block;
+    margin: 20px auto;
+}
+
+.boton-colapse{
+    background-color: aliceblue;
+    display: block;
+    margin: 20px auto;
+}

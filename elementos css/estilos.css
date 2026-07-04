@@ -1,0 +1,88 @@
+.imagen {
+    position: fixed;
+    bottom: 10px;
+    right: 10px
+}
+
+.titulo {
+    font-size: 60px;
+    color: crimson;
+}
+
+.titulo:hover {
+    color: olive;
+    font-size: 70px;
+    background-color: beige;
+}
+
+.parrafo {
+    border: 2px dotted black;
+}
+
+.parrafo2 {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.parrafo:hover {
+    background-color: crimson;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+h2 {
+    text-align: center;
+    color: crimson;
+}
+
+.listaO:active {
+    background-color: beige;
+    color: olive;
+    font-size: 40px;
+}
+
+.listaU:active {
+    background-color: beige;
+    color: olive;
+    font-size: 40px;
+}
+
+.centro {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th,
+tr,
+td {
+    border: solid 1px;
+    padding: 5px;
+}
+
+tr,
+td {
+    text-align: left;
+
+}
+
+th {
+    background-color: bisque;
+    color: brown;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: azure;
+    font-size: 10px;
+    color: blueviolet;
+}
+
+
+.iframe-centrado {
+    display: block;
+    margin: 0 auto;
+}
