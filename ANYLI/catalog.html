@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Esta pagina habla sobre un emprendimiento de carteras hechas a mano, utilizando cuencas de colores ">
+    <meta name="keywords" content="Cartera, Handmade, Colores">
+    <meta name="author" content="Diana Fernandez">
+    <title>Catalogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="anyliclaro.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script>
+        const tema = localStorage.getItem("tema") || "light";
+        document.documentElement.setAttribute("data-bs-theme", tema);
+    </script>
+</head>
+
+<body>
+
+
+    <!-- Nav bar -->
+
+    <nav class=" navbar navbar-expand-lg navbar-dark">
+        <button class="btn btn-outline-secondary" id="tema">
+            <i class="bi bi-moon-fill"></i>
+        </button>
+        <div class=" container">
+            <a class="navbar-brand" href="#">
+                <img src="anyliclaro.png" alt="Logo anyli" width="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
+                aria-controls="menuNavbar" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Sobrenosotros.html"> Sobre Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="catalog.html"> Catálogo </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contacto.html"> Contacto </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+
+
+
+    <h1 id="Titulo-cartera">Catálogo de Carteras</h1>
+
+    <div class="container mt-4">
+        <div class="row g-4">
+
+            <!-- Tarjeta 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="Carteraazul.jpeg" class="card-img-top" alt="Sea Aroma">
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Sea Aroma</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="Carteraroja.jpeg" class="card-img-top" alt="Anyli Bag">
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Anyli Bag</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="Carteramulitcolor.jpeg" class="card-img-top" alt="Tropico Esmeralda">
+
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Tropico Esmeralda</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="Carteragris.jpeg" class="card-img-top" alt="Luna Caribe">
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Luna Caribe</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="Carteranegra.jpeg" class="card-img-top" alt="Lady in black">
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Lady in black</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="carterarosada.png" class="card-img-top" alt="Coralina">
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Coralina</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card card-cartera">
+                            <img src="Carteramulticolorbibrante.png" class="card-img-top" alt="Caribeña">
+                        </div>
+
+                        <div class="flip-card-back card card-cartera">
+                            <div class="card-body">
+                                <h4 align="center">Caribeña</h4>
+                                <p>jjjj
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- fixed -->
+
+    <img src="anyliclaro.png" alt="Logo" class="logo">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+        popoverTriggerList.forEach(function (popoverTriggerEl) {
+            new bootstrap.Popover(popoverTriggerEl);
+        });
+    </script>
+
+    <script>
+        const boton = document.getElementById("tema");
+
+        boton.addEventListener("click", () => {
+            const html = document.documentElement;
+
+            if (html.getAttribute("data-bs-theme") === "light") {
+                html.setAttribute("data-bs-theme", "dark");
+                boton.innerHTML = '<i class="bi bi-sun-fill"></i>';
+            } else {
+                html.setAttribute("data-bs-theme", "light");
+                boton.innerHTML = '<i class="bi bi-moon-fill"></i>';
+            }
+        });
+    </script>
+</body>
+
+</html>

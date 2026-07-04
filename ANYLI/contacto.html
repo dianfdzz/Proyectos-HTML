@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Esta pagina habla sobre un emprendimiento de carteras hechas a mano, utilizando cuencas de colores ">
+    <meta name="keywords" content="Cartera, Handmade, Colores">
+    <meta name="author" content="Diana Fernandez">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="anyliclaro.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script>
+        const tema = localStorage.getItem("tema") || "light";
+        document.documentElement.setAttribute("data-bs-theme", tema);
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Nav bar -->
+
+    <nav class=" navbar navbar-expand-lg navbar-dark">
+        <button class="btn btn-outline-secondary" id="tema">
+            <i class="bi bi-moon-fill"></i>
+        </button>
+        <div class=" container">
+            <a class="navbar-brand" href="#">
+                <img src="anyliclaro.png" alt="Logo anyli" width="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"
+                aria-controls="menuNavbar" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Sobrenosotros.html"> Sobre Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="catalog.html"> Catálogo </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html"> Contacto </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <img src="anyliclaro.png" alt="Logo" class="logo">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 id="titulo-contacto">¿Quieres saber más sobre nosotros? </h2>
+                <h3 id="subtitulo-contacto">¡Siguenos en nuestras redes sociales!</h3>
+                <br>
+
+
+                <div class="text-center mt-4">
+                    <ul class="lista">
+                        <li>
+                            <a href="https://www.instagram.com/anyli.rd?igsh=ZnF5ZjRvcmh5c3Nm" target="_blank"
+                                class="d-inline-flex align-items-center text-decoration-none ">
+                                <i class="bi bi-instagram fs-1 instagram-icon"></i>
+                                <span class="ms-2 redes"">Anyli.rd</span>
+                            </a>
+                        </li>
+            
+
+     <li>
+                         <a href=" " target=" _blank" class="d-inline-flex align-items-center text-decoration-none ">
+                                    <i class="bi bi-facebook fs-1 facebook-icon"></i>
+                                    <span class="ms-2 redes"">Anylird</span>
+
+                              </a>
+
+                      </li> 
+
+                          <li>
+                         <a href=" " target=" _blank" class="d-inline-flex align-items-center text-decoration-none ">
+                                        <i class="bi bi-twitter-x fs-1 X-icon"></i>
+                                        <span class="ms-2 redes"">Anylird</span>
+
+                              </a>
+
+                      </li> 
+
+                            <li>
+                         <a href=" https://www.instagram.com/jnyiich?igsh=MWpvbzNhaW01NmRieA==" target=" _blank"
+                                            class="d-inline-flex align-items-center text-decoration-none ">
+                                            <i class="bi bi-instagram fs-1 instagram-icon"></i>
+                                            <span class="ms-2 redes"">Juany Dominguez</span>
+
+                              </a>
+
+                      </li> 
+
+                             <li>
+                         <a href="Juanydominguez@gmail.com" target=" _blank"
+                                                class="d-inline-flex align-items-center text-decoration-none ">
+                                                <i class="bi bi-envelope-fill fs-1 envelope-icon"></i>
+                                                <span class="ms-2 redes"">Enviar correo</span>
+
+                              </a>
+
+                      </li> 
+
+                     </ul>
+            </div>
+         </div>
+
+
+            <div class=" col-md-6 text-center">
+                                                    <img src="Diversascarteras.jpeg" alt="Cartera Tropical"
+                                                        class="img-fluid rounded">
+                                                    <br>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+            popoverTriggerList.forEach(function (popoverTriggerEl) {
+                new bootstrap.Popover(popoverTriggerEl);
+            });
+        </script>
+
+        <script>
+            const boton = document.getElementById("tema");
+
+            boton.addEventListener("click", () => {
+                const html = document.documentElement;
+
+                if (html.getAttribute("data-bs-theme") === "light") {
+                    html.setAttribute("data-bs-theme", "dark");
+                    boton.innerHTML = '<i class="bi bi-sun-fill"></i>';
+                } else {
+                    html.setAttribute("data-bs-theme", "light");
+                    boton.innerHTML = '<i class="bi bi-moon-fill"></i>';
+                }
+            });
+        </script>
+</body>
