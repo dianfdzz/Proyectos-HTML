@@ -23,7 +23,7 @@ h2 {
 }
 
 [data-bs-theme="light"] {
-    --fondo: #FFFEEB;
+    --fondo: #FFEFEB;
     --texto: #222;
 }
 
@@ -33,13 +33,13 @@ h2 {
 }
 
 body {
-    background-color: var(--fondo, #FFFEEB);
+    background-color: var(--fondo, #FFEFEB);
     color: var(--texto);
 }
 
 .flip-card {
     width: 300px;
-    height: 410px;
+    height: 300px;
     perspective: 1000px;
 }
 
@@ -129,6 +129,11 @@ body {
     align-items: center;
 }
 
+.card-img-top{
+    height: 300px;
+    object-fit: cover;
+}
+
 
 .redes {
     font-size: 15px;
@@ -160,4 +165,20 @@ body {
 .card-modelo:hover{
      transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+ol{
+    list-style-type: none;
+}
+
+#titulo-cards {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #D0516E;
+}
+
+#parrafo-cards {
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #8a574f;
 }
