@@ -1,6 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 
-window.alert("Al aceptar esta alerta, usted estara aceptando los terminos y condiciones de la pagina web ANYLI.");
+    popoverTriggerList.forEach(popoverTriggerEl => {
+        new bootstrap.Popover(popoverTriggerEl);
+    });
+});
 
-function mostrarAlerta() {
-    window.alert("Esto es una alerta desde el objeto window.");
-}

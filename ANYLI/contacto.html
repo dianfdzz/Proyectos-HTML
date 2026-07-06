@@ -21,7 +21,6 @@
         const tema = localStorage.getItem("tema") || "light";
         document.documentElement.setAttribute("data-bs-theme", tema);
     </script>
-
 </head>
 
 <body>
@@ -114,10 +113,21 @@
                       </li> 
 
                              <li>
-                         <a href="mailto:dfernandez2829@gmail.com" target=" _blank"
+                         <a href=" mailto:dfernandez2829@gmail.com" target=" _blank"
                                                 class="d-inline-flex align-items-center text-decoration-none ">
                                                 <i class="bi bi-envelope-fill fs-1 envelope-icon"></i>
                                                 <span class="ms-2 redes"">Enviar correo</span>
+
+                              </a>
+
+                      </li> 
+
+                      
+                             <li>
+                         <a href=" https://coveteur.com/beaded-bag-trend" target=" _blank"
+                                                    class="d-inline-flex align-items-center text-decoration-none ">
+                                                    <i class="bi bi-newspaper fs-1 news-icon"></i>
+                                                    <span class="ms-2 redes"">Ver articulo</span>
 
                               </a>
 
@@ -129,9 +139,9 @@
 
 
             <div class=" col-md-6 text-center">
-                                                    <img src="diversascarterass.png" alt="Cartera Tropical"
-                                                        class="img-fluid rounded img-contacto">
-                                                    <br>
+                                                        <img src="diversascarterass.png" alt="Cartera Tropical"
+                                                            class="img-fluid rounded img-contacto">
+                                                        <br>
                 </div>
 
             </div>
@@ -139,29 +149,36 @@
         </div>
 
 
-
+        <img src="anyliclaro.png" alt="Logo" class="logo" data-bs-toggle="popover" data-bs-placement="left"
+            data-bs-title="¿Sabías que?"
+            data-bs-content="Todas nuestras piezas son creadas artesanalmente con atencion al mas minimo detalle, haciendo de cada cartera una obra de arte unica para tu coleccion">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-        <script>
-            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-
-            popoverTriggerList.forEach(function (popoverTriggerEl) {
-                new bootstrap.Popover(popoverTriggerEl);
-            });
-        </script>
+        <script src="Anyli.js"></script>
 
         <script>
             const boton = document.getElementById("tema");
+            const html = document.documentElement;
+
+            const temaGuardado = localStorage.getItem("tema");
+
+            if (temaGuardado) {
+                html.setAttribute("data-bs-theme", temaGuardado);
+                if (temaGuardado == "dark") {
+                    boton.innerHTML = '<i class="bi bi-sun-fill"><i>';
+                } else {
+                    boton.innerHTML = '<i class="bi bi-moon-fill"><i>';
+                }
+            }
 
             boton.addEventListener("click", () => {
-                const html = document.documentElement;
-
                 if (html.getAttribute("data-bs-theme") === "light") {
                     html.setAttribute("data-bs-theme", "dark");
+                    localStorage.setItem("tema", "dark");
                     boton.innerHTML = '<i class="bi bi-sun-fill"></i>';
                 } else {
                     html.setAttribute("data-bs-theme", "light");
+                    localStorage.setItem("tema", "light");
                     boton.innerHTML = '<i class="bi bi-moon-fill"></i>';
                 }
             });

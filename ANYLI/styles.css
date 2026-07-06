@@ -129,7 +129,7 @@ body {
     align-items: center;
 }
 
-.card-img-top{
+.card-img-top {
     height: 300px;
     object-fit: cover;
 }
@@ -141,7 +141,7 @@ body {
     color: #8a574f;
 }
 
-.lista{
+.lista {
     font-size: 15px;
     font-family: 'Playfair Display', serif;
     color: #8a574f;
@@ -162,12 +162,17 @@ body {
     font-size: 24px;
 }
 
-.card-modelo:hover{
-     transform: scale(1.05);
+.news-icon {
+    color: #E1306C;
+    font-size: 24px;
+}
+
+.card-modelo:hover {
+    transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-ol{
+ol {
     list-style-type: none;
 }
 
@@ -180,5 +185,16 @@ ol{
 #parrafo-cards {
     font-size: 15px;
     font-family: 'Playfair Display', serif;
+    color: #8a574f;
+}
+
+.miBoton {
+    background-color: #D0516E;
+    display: block;
+    margin: auto;
+}
+
+.titulo-lovers:hover{
+    font-size: 70px;
     color: #8a574f;
 }
